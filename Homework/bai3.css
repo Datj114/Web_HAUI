@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    max-height: 100%;
+    height: 100%;
+}
+.img-header{
+    height: 100%;
+}
+header i{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: pink;
+    color: white;
+}
+header div{
+    padding: 10px 20px;
+}
+nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: pink;
+        height: 15vh;
+}
+.nav-left> ul{
+    display: flex;
+}
+.nav-left ul li{
+    padding: 10px 20px;
+    list-style: none;
+}
+nav{
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.cha{
+    position: relative;
+}
+.con{
+    position: absolute;
+    background-color: pink;
+    width: 15vw;
+    left: 0;
+    display: none;
+}
+.cha:hover .con{
+    display: block;
+}
+.search-bar {
+    background-color: white;
+    /* Màu hồng */
+    padding: 10px;
+    border-radius: 25px;
+    width: fit-content;
+}
+.search-bar input{
+    border: none;
+}
+select{
+    border: none;
+    border-left: 1px solid #000;;
+}
+main{
+    display: flex;
+}
+.main-left{
+    flex: 2.5;
+    padding: 10px 20px 0 5px;
+    border: 1px solid #000;
+    height: 60vh;
+    margin-right: 20px;
+}
+.main-left h3{
+    background-color: rgb(242, 182, 70);
+}
+.main-left li{
+    padding: 10px 20px;
+}
+.main-right{
+    flex: 7.5;
+    border: 1px solid #000;
+}
+.main-right .contetn-main{
+    display: flex;
+}
+.main-right .contetn-main .product{
+   
+}
+
+.main-right>p{
+    text-align: center;
+    padding: 10px;
+}
+.tex{
+    color: #484545;
+}
+.product p{
+  font-weight: bolder;
+}
+.pad{
+    padding-left: 15px;
+}

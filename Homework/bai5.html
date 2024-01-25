@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bai5.css">
+</head>
+<body>
+    <header>
+        <div class="image"> 
+            <img src="data:image/png;base64,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" alt="">
+        </div>
+        <div class="content">
+            <h2>XƯỞNG SẢN XUẤT ĐỒ GỖ <span>HƯỜNG NGÂN</span></h2>
+            <div>
+                <span> Địa chỉ cơ sở 1-222-Hà đông-Hà Nội</span>
+                <span> cớ sở 2: lò 4-Hà Đông- Hà Nội</span>
+            </div>
+        </div>
+    </header>
+    <main>
+       <nav>
+            <ul>
+                <li><a href="#">Nội thất phòng khác</a></li>
+                <li><a href="#">Nội thất phòng ngủ</a></li>
+                <li class="cha"><a href="#">Nội thất phòng ăn</a>
+                    <ul class="con">
+                        <li><a href="#">Tủ bếp gỗ tự nhiên</a></li>
+                        <li><a href="#">Tủ bếp gỗ công nghiệp</a></li>
+                        <li><a href="#">bàn ghế ăn</a></li>
+
+                        <li><a href="#">Thiết bị nhà bếp</a></li>
+
+                        
+                    </ul>
+                </li>
+                <li><a href="#">Nội thất phòng trẻ</a></li>
+                <li><a href="#">Nội thất làm việc</a></li>
+                <li><a href="#">Thủ công mỹ nghệ</a></li>
+                <li><a href="#">tư vẫn thiết kế</a></li>
+                <li><a href="#">Nội thất khác</a></li>
+                <li><a href="#">công trình thi công</a></li>
+                <li><a href="#">giường tầng trẻ em</a></li>
+                <li><a href="#">Nội thất</a></li>
+
+
+            </ul>
+       </nav>
+       <div class="content">
+            <div class="content-top">
+                Giường gỗ các loại, các kiểu dáng, nhiều mẫu mà, nhiều thể loại tuỳ chọ
+                <div>
+                    <span>sắp xếp</span>
+                    <select name="Lựa chọn" id="">
+                        <option value="">Mới nhất</option>
+                        <option value="">Đắt nhất</option>
+                    </select>
+                </div>
+            </div>
+            <div class="content-bottom">
+                <div class="products">
+                    <div class="pro">
+                        <div class="image-pro">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZOATuotOiZyThzaasWKav4cAkLSOvjNLHPA&usqp=CAU" alt="">
+                        </div>
+                        <p>Bàn học hiện đại mới nhất nheeeeeeeeee</p>
+                        <p style="color: #CC3366">Giá bán 15.000.00 đ</p>
+                        <div class="buttom-select">
+                            <button>Mua</button>
+                            <button>Chi tiết</button>
+                        </div>
+                    </div>
+                    <div class="pro">
+                        <div class="image-pro">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZOATuotOiZyThzaasWKav4cAkLSOvjNLHPA&usqp=CAU"
+                                alt="">
+                        </div>
+                        <p>Bàn học hiện đại mới nhất nheeeeeeeeee</p>
+                        <p style="color: #CC3366">Giá bán 15.000.00 đ</p>
+                        <div class="buttom-select">
+                            <button>Mua</button>
+                            <button>Chi tiết</button>
+                        </div>
+                    </div>
+                    <div class="pro">
+                        <div class="image-pro">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZOATuotOiZyThzaasWKav4cAkLSOvjNLHPA&usqp=CAU"
+                                alt="">
+                        </div>
+                        <p>Bàn học hiện đại mới nhất nheeeeeeeeee</p>
+                        <p style="color: #CC3366">Giá bán 15.000.00 đ</p>
+                        <div class="buttom-select">
+                            <button>Mua</button>
+                            <button>Chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="pro">
+                        <div class="image-pro">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZOATuotOiZyThzaasWKav4cAkLSOvjNLHPA&usqp=CAU"
+                                alt="">
+                        </div>
+                        <p>Bàn học hiện đại mới nhất nheeeeeeeeee</p>
+                        <p style="color: #CC3366">Giá bán 15.000.00 đ</p>
+                        <div class="buttom-select">
+                            <button>Mua</button>
+                            <button>Chi tiết</button>
+                        </div>
+                    </div>
+                    <div class="pro">
+                        <div class="image-pro">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZOATuotOiZyThzaasWKav4cAkLSOvjNLHPA&usqp=CAU"
+                                alt="">
+                        </div>
+                        <p style="">Bàn học hiện đại mới nhất nheeeeeeeeee</p>
+                        <p style="color: #CC3366">Giá bán 15.000.00 đ</p>
+                        <div class="buttom-select">
+                            <button>Mua</button>
+                            <button>Chi tiết</button>
+                        </div>
+                    </div>
+                    <div class="pro">
+                        <div class="image-pro">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZOATuotOiZyThzaasWKav4cAkLSOvjNLHPA&usqp=CAU"
+                                alt="">
+                        </div>
+                        <p>Bàn học hiện đại mới nhất nheeeeeeeeee</p>
+                        <p style="color: #CC3366">Giá bán 15.000.00 đ</p>
+                        <div class="buttom-select">
+                            <button>Mua</button>
+                            <button>Chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+       <div class="right">
+            <div class="right-top">
+                <h3>HƯỚNG DẪN MUA HÀNG</h3>
+                <p>Hướng dẫn mua hàng</p>
+            </div>
+            <div class="right-bottom">
+                <h3>TIN NỔI BẬT</h3>
+                <div class="right-bottom-info">
+                    <div class="image-pro">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZOATuotOiZyThzaasWKav4cAkLSOvjNLHPA&usqp=CAU" alt="">
+                    </div>
+                    <span>báo giá sản phẩm giảm mạnh chưa bao giờ thấy hot hot nhe</span>
+                </div>
+                <div class="right-bottom-info">
+                    <div class="image-pro">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZOATuotOiZyThzaasWKav4cAkLSOvjNLHPA&usqp=CAU"
+                            alt="">
+                    </div>
+                    <span>báo giá sản phẩm giảm mạnh chưa bao giờ thấy hot hot nhe</span>
+                </div>
+                <div class="right-bottom-info">
+                    <div class="image-pro">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZOATuotOiZyThzaasWKav4cAkLSOvjNLHPA&usqp=CAU"
+                            alt="">
+                    </div>
+                    <span>báo giá sản phẩm giảm mạnh chưa bao giờ thấy hot hot nhe</span>
+                </div>
+            </div>
+       </div>
+    </main>
+</body>
+</html>

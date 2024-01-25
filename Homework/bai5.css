@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+header{
+    background-color: rgb(247, 227, 200);
+    height: 15vh;
+    display: flex;
+}
+img{
+    max-height: 100%;
+    height: 100%;
+}
+.image{
+    height: 100%;
+}
+header .content h2 > span{
+    color: red;
+    font-size: larger;
+}
+header .content{
+padding-right: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+header .content div span{
+    padding: 10px ;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+    padding: 10px 15px;
+    background-color: #00A69B;
+    border: 1px solid white;
+}
+li:hover{
+    background-color: #66FFFF;
+}
+main{
+    display: flex;
+    margin-top: 25px;
+}
+nav{
+    flex: 2;
+}
+.cha{
+    position: relative;
+}
+.con{
+    position: absolute;
+    top: 0;
+        right: -179px;
+    display: none;
+}
+.cha:hover .con{
+    display: block;
+}
+.content{
+    flex: 7;
+    margin: 0 15px;
+    border: 1px solid orange;
+}
+.right{
+    flex: 1.5;
+    font-size: 16px;
+    
+    border: 1px solid orange;
+        border-radius: 5px;
+        padding: 5px;
+}
+.right h3{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: orange;
+}
+.right-top{
+    border: 1px solid orange;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.right-top p{
+    padding: 15px ;
+}
+.image-pro img{
+    max-width: 100%;
+    
+}
+
+.right-bottom-info{
+    display: flex;
+    padding: 5px;
+    border-top: 1px solid orange;
+}
+.content-top{
+    color: white;
+        text-align: center;
+        padding: 10px;
+        background-color: orange;
+        font-weight: bolder;
+        display: flex;
+        justify-content: space-around;
+}
+.products{
+    display: flex;
+}
+.products .pro{
+    width: 33%;
+    padding: 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+}
+.pro:hover  p{
+    font-size: larger;
+}
+.pro:hover{
+    background-color: #00A69B;
+}
+.products p,button{
+    font-weight: bolder;
+    text-align: center;
+}
+button{
+    padding: 10px ;
+    background-color: orange;
+    color: white;
+    border: none;
+    margin: 15px;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+<body>
+    <header>
+       <div class="logo">
+            <img src="data:image/png;base64,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" alt="">
+       </div>
+       <div class="search">
+            <input type="text" placeholder="nhap ten san pham" >
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+       </div>
+       <div class="text-content">
+            <div class="text">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>thông tin hay</span>
+
+            </div>
+            <div class="text">                
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <span>thông tin hay</span>
+
+            </div>
+            <div class="text">                
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <span>thông tin hay</span>
+
+            </div>
+       </div>
+    </header>
+    <nav>
+        <ul>
+            <li class="cha">Dien thoai
+                <ul class="con">
+                    <li>a</li>
+                    <li>b</li>
+                    <li>c</li>
+                </ul>
+            </li>
+            <li>Laptop </li>
+            <li>apple</li>
+            <li> phụ kiện</li>
+            <li>máy cũ giá rẻ</li>
+            <li>hàng đa dụng</li>
+
+        </ul>
+    </nav>
+    <main>
+        <div class="top-content">
+            <div class="top-content-text a">Galaxy NOTE</div>
+            <div class="top-content-text">Galaxy NOTE 10</div>
+
+            <div class="top-content-text">Galaxy Note 11</div>
+
+            <div class="top-content-text">Galaxy Note 11</div>
+
+            <div class="top-content-text">Galaxy Note 11</div>
+            <div class="top-content-text">Galaxy Note 11</div>
+
+        </div>
+        <div class="bottom">
+            <div class="content-left">
+                <div class="content-img">
+                    <div class="image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStfSizxAJKLXlofcb5Kz5yRSPuwD4LwQmlew&usqp=CAU"
+                            alt="">
+                    </div>
+                    <div class="image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStfSizxAJKLXlofcb5Kz5yRSPuwD4LwQmlew&usqp=CAU"
+                            alt="">
+                    </div>
+                </div>
+                <div class="content-img">
+                    <div class="image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStfSizxAJKLXlofcb5Kz5yRSPuwD4LwQmlew&usqp=CAU"
+                            alt="">
+                    </div>
+                    <div class="image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStfSizxAJKLXlofcb5Kz5yRSPuwD4LwQmlew&usqp=CAU"
+                            alt="">
+                    </div>
+                </div>
+                <div class="content-img">
+                    <div class="image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStfSizxAJKLXlofcb5Kz5yRSPuwD4LwQmlew&usqp=CAU"
+                            alt="">
+                    </div>
+                    <div class="image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStfSizxAJKLXlofcb5Kz5yRSPuwD4LwQmlew&usqp=CAU"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-content">
+                    <div class="image-buy">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStfSizxAJKLXlofcb5Kz5yRSPuwD4LwQmlew&usqp=CAU"
+                            alt="">
+                    </div>
+                    <div>Tai nghe chính hãng nên mua nha bn</div>
+                    <div class="money">
+                        <div>
+                            <div>1.999đ</div>
+                            <div class="gach">9999đ</div>
+                        </div>
+                        <span>-90%</span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div><div class="right-content">
+                    <div class="image-buy">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStfSizxAJKLXlofcb5Kz5yRSPuwD4LwQmlew&usqp=CAU"
+                            alt="">
+                    </div>
+                    <div>Tai nghe chính hãng nên mua nha bn</div>
+                    <div class="money">
+                        <div>
+                            <div>1.999đ</div>
+                            <div class="gach">9999đ</div>
+                        </div>
+                        <span>-90%</span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div><div class="right-content">
+                    <div class="image-buy">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStfSizxAJKLXlofcb5Kz5yRSPuwD4LwQmlew&usqp=CAU"
+                            alt="">
+                    </div>
+                    <div>Tai nghe chính hãng nên mua nha bn</div>
+                    <div class="money">
+                        <div>
+                            <div>1.999đ</div>
+                            <div class="gach">9999đ</div>
+                        </div>
+                        <span>-90%</span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div><div class="right-content">
+                    <div class="image-buy">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStfSizxAJKLXlofcb5Kz5yRSPuwD4LwQmlew&usqp=CAU"
+                            alt="">
+                    </div>
+                    <div>Tai nghe chính hãng nên mua nha bn</div>
+                    <div class="money">
+                        <div>
+                            <div>1.999đ</div>
+                            <div class="gach">9999đ</div>
+                        </div>
+                        <span>-90%</span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div><div class="right-content">
+                    <div class="image-buy">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStfSizxAJKLXlofcb5Kz5yRSPuwD4LwQmlew&usqp=CAU"
+                            alt="">
+                    </div>
+                    <div>Tai nghe chính hãng nên mua nha bn</div>
+                    <div class="money">
+                        <div>
+                            <div>1.999đ</div>
+                            <div class="gach">9999đ</div>
+                        </div>
+                        <span>-90%</span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>

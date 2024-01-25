@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100vw;
+    
+    height: 100%;
+}
+.image{
+  
+    height: 100%;
+}
+header{
+    display: flex;
+    height: 20vh;
+    background-color: orange;
+        justify-content: space-around;
+}
+nav{
+    background-color: bisque;
+    display: flex;
+    
+}
+nav > ul{
+    display: flex;
+    width: 100vw;
+        justify-content: space-around;
+}
+nav>ul li{
+    list-style: none;
+    padding: 10px 15px;
+    /* border: 1px solid; */
+}
+.cha{
+    position: relative;
+}
+.con{
+    width: 10vw;
+    position: absolute;
+    display: none;
+}
+.cha:hover .con{
+    display: block;
+    background-color: beige;
+}
+a{
+    text-decoration: none;
+}
+main{
+    display: flex;
+}
+.left{
+    flex: 2.5;
+    background-color: aqua;
+}
+.left h2{
+    background-color: red;
+    padding: 10px;
+}
+.left ul{
+    padding: 10px 0 10px 40px;
+    border: 1px solid;
+   
+}
+.left li{
+    border-top: 1px solid;
+    list-style: square;
+    padding: 10px;
+}
+.cha1{
+    position: relative;
+}
+.con1{
+        position: absolute;
+            display: none;
+            right: -89px;
+            top: -9px;
+}
+.cha1:hover .con1{
+    display: block;
+    background-color: aqua;
+}
+
+.right{
+    flex: 7;
+   background-color: olive;
+}
+.img-right >img{
+    width: 100%;
+
+}
+.right p{
+    text-align: center;
+    padding: 10px;
+}
+.content .content-top{
+    display: flex;
+    justify-content: space-evenly;
+}
+.content-top .content-child{
+    padding: 10px;
+}
+.nav-bottom{
+    background-color: cadetblue;
+
+}
+.nav-bottom .con{
+        top: -109px;
+}
+footer{
+    background-color: orange;
+}
+footer h3{
+    text-align: center;
+}
