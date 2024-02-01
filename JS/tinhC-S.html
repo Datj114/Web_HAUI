@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<style>
+    form{
+        background-color: beige;
+        padding: 10px;
+        max-width: 30vw;
+    }
+    div{
+        padding: 10px 15px;
+        display: flex;
+            justify-content: space-evenly;
+    }
+</style>
+<body>
+
+  
+
+    <form id="myForm">
+        <h2>DIỆN TÍCH và CHU VI HÌNH TRÒN</h2>
+        <div>
+            <span>Bán kính:</span>
+            <input type="number" id="radius" name="radius">
+        </div>
+       
+        <div>
+           <span>Diện tích:</span><input type="text" id="area" name="area" readonly>
+        </div>
+       <div><span>Chu vi:</span> <input type="text" id="circumference" name="circumference" readonly></div>
+        <input type="button" value="Tính" onclick="calculate()">
+    </form>
+
+    <script>
+        function calculate() {
+            var radius = document.getElementById("radius").value;
+            var area = Math.PI * radius * radius;
+            var circumference = 2 * Math.PI * radius;
+            document.getElementById("area").value = area;
+            document.getElementById("circumference").value = circumference;
+        }
+    </script>
+
+</body>
+
+</html>

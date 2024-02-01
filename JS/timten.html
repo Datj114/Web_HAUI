@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form{
+        width: 30vw;
+        background-color: beige;
+    }
+    div{
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    span{
+        display: flex;
+        justify-content: center;
+    }
+    span input{
+        margin: 10px;
+    }
+</style>
+<body>
+    <form action="">
+        <div>
+            <span>Họ và tên:</span>
+            <input type="text" id="nhap">
+        </div>
+        <div>
+            <span>Tên:</span>
+            <input type="text" id="ten">
+        </div>
+        <span>
+            <input type="button" value="tim" id="tim">
+            <input type="button" value="xoa" id="xoa">
+        </span>
+    </form>
+    <script>
+        document.getElementById('tim').onclick=function(){
+            var ten = document.getElementById('nhap').value
+            ten=ten.trim()
+            ten=ten.replace(/\s +/g,' ')
+            document.getElementById('nhap').value=ten
+            var arr=ten.split(" ")
+            document.getElementById('ten').value=arr[arr.length-1]
+        }
+        document.getElementById('xoa').onclick = function (){
+            document.getElementById('ten').value=''
+            document.getElementById('nhap').value = ''
+
+        }
+    </script>
+</body>
+</html>

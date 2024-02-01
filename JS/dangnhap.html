@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        tr {
+            text-align: right;
+        }
+        input {
+            padding: 4px;
+        }
+    </style>
+    <script>
+        var flag = true;
+        function check(element) {
+            var value = element.value;
+            if (value == '') {
+                alert('Không được để trống!');
+                element.style.backgroundColor = '#FF5C5C';
+                flag = false;
+            }
+            else {
+                element.style.backgroundColor = '#fff';
+                flag = true;
+            }
+        }
+
+        function checkPassword(element) {
+            check(element);
+            var regex = /^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[\W_]).{8,}$/;
+            var value = element.value;
+            if (!regex.test(value)) {
+                alert ('Mật khẩu không hợp lệ. Vui lòng nhập lại!');
+                element.style.backgroundColor = '#FF5C5C';
+                flag = false;
+            }
+        }
+
+        function checkPassword2(element) {
+            check(element);
+            if (document.getElementById('password').value != element.value) {
+                alert ('Mật khẩu không trùng khớp');
+                element.style.backgroundColor = '#FF5C5C';
+                flag = false;
+            }
+        }
+
+        function register() {
+            if (flag) {
+                alert ('Đăng ký thành công.');
+            }
+            else {
+                alert ('Thông tin đăng ký không hợp lệ, vui lòng kiểm tra lại!');
+            }
+        }
+    </script>
+</head>
+<body>
+    <table cellspacing="0" cellpadding="4px" align="center">
+        <caption>
+            <h1>Register Form</h1>
+        </caption>
+        <form action="">
+            <tr>
+                <th>Tên đăng nhập:</th>
+                <td><input type="text" name="username" id="username" onblur="check(this)"></td>
+            </tr>
+            <tr>
+                <th>Mail:</th>
+                <td><input type="email" name="mail" id="mail" onblur="check(this)"></td>
+            </tr>
+            <tr>
+                <th>Mật khẩu:</th>
+                <td><input type="password" name="password" id="password" onblur="checkPassword(this)"></td>
+            </tr>
+            <tr>
+                <th>Nhập lại mật khẩu</th>
+                <td><input type="password" name="password2" id="password2" onblur="checkPassword2(this)"></td>
+            </tr>
+            <tr>
+                <th>Thông tin về bản thân:</th>
+                <td><input type="text" name="info" id="info" onblur="check(this)"></td>
+            </tr>
+            <tr>
+            <td colspan="2" align="center">
+                    <input type="button" value="Đăng ký" onclick="register()">
+                    <input type="reset" value="Huỷ bỏ">
+            </td> 
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

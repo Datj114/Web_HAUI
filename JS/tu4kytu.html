@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form{
+        background-color: bisque;
+        width: 30vw;
+    }
+    div{
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    span{
+       display: flex;
+    }
+</style>
+<body>
+    <form action="">
+        <div>
+            <span>nhap tu</span>
+            <input type="text" id="tu">
+        </div>
+        <div>
+            <span>so tu tren 4 ky tu</span>
+            <input type="text" id="kq">
+        </div>
+        <span>
+            <input type="button" value="tim kiem" onclick="tim()">
+            <input type="button" value="huy" id="huy">
+
+        </span>
+    </form>
+    <script>
+        function tim() {
+            let count = 0;
+           if (document.getElementById("tu").value.length < 255) {
+            
+                let words = document.getElementById("tu").value.split(' ');
+                // console.log(words)
+                
+                for (let i = 0; i < words.length; i++) {
+                    if (words[i].length === 4 && words[i].startsWith('m')) {
+                        count++;
+                    }
+                }
+        }
+                 document.getElementById("kq").value = count
+
+       
+    }
+        document.getElementById("huy").onclick = function () {
+                // Xử lý khi nút "huy" được nhấn
+                // Ví dụ: Xóa giá trị của ô nhập liệu "tu" và "kq"
+                document.getElementById("tu").value = "";
+                document.getElementById("kq").value = "";
+            };
+
+    </script>
+</body>
+</html>
