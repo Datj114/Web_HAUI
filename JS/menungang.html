@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+             *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: aquamarine;
+        }
+        nav> ul{
+            display: flex;
+            
+            justify-content: space-around;
+
+        }
+        nav li{
+            list-style: none;
+            padding: 15px 10px;
+            background-color: aquamarine;
+        }
+        .cha{
+            position: relative;
+        }
+        .con{
+            position: absolute;
+            left: 0;
+            width: 150px;
+            display: none;
+        }
+        .cha:hover .con{
+            display: block;
+        }
+        a{
+            text-decoration: none;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li class="cha"><a href="#">Danh mục sản phẩm</a>
+                <ul class="con">
+                    <li><a href="#">Giống cây ăn quả</a></li>
+                    <li><a href="#">Giống cây ăn quả</a></li>
+                    <li><a href="#">Giống cây ăn quả</a></li>
+                    <li><a href="#">Giống cây ăn quả</a></li>
+                    <li><a href="#">Giống cây ăn quả</a></li>
+
+                </ul>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+
+        </ul>
+    </nav>
+</body>
+</html>

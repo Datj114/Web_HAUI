@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table align="center">
+            <tr>
+                <td colspan="2" align="center"><h2>Nhap ten de sua</h2></td>
+            </tr>
+            <tr>
+                <td>Họ và tên</td>
+                <td><input type="text" id="fullname"></td>
+            </tr>
+            <tr>
+                <td>Họ và tên chuẩn</td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Sửa" onclick="fun()">
+                    <input type="reset" value="Xoá">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        
+        function fun(){
+            var fullname = document.getElementById('fullname').value;
+            var name = fullname.trim().replace(/\s+/g, ' ')
+            name=name.toLowerCase().replace(/\b\w/g,function(l){
+                return l.toUpperCase()
+            })
+            document.getElementById('name').value=name
+            
+        }
+    </script>
+</body>
+</html>

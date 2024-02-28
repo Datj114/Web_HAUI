@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td>Nhập chuỗi</td>
+                <td><input type="text" id="a"></td>
+            </tr>
+            <tr>
+                <td>Nhập từ</td>
+                <td><input type="text" id="b"></td>
+            </tr>
+            <tr>
+                <td>thông báo</td>
+                <td><input type="text" id="c"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="kiểm tra" onclick="fun()">
+                    <input type="reset" value="huỷ bỏ">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        var a=document.getElementById('a').value;
+        var b = document.getElementById('b').value;
+        function fun(){
+            var c=0
+            if(a.length<=255){
+                a=a.split(" ")
+                var d=new RegExp(b,'g')
+                for(var i=0;i<a.length;i++){
+                    if(d.test(a[i])){
+                        c++
+
+                    }
+                }
+                document.getElementById('c').value=c
+            }
+        }
+
+
+    </script>
+</body>
+</html>

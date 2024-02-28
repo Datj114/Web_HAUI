@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+         nav ul {
+            background-color: aquamarine;
+        }
+    
+        nav li {
+            list-style: none;
+            padding: 10px 15px;
+        }
+    
+        nav a {
+            text-decoration: none;
+        }
+    
+        .cha {
+            position: relative;
+        }
+    
+        .con {
+            display: none;
+            width: 150px;
+            left: 191px;
+            top: 0;
+            position: absolute;
+        }
+    
+        .cha:hover .con {
+            display: block;
+        }
+    
+        .content {
+            display: flex;
+        
+        }
+        
+    .a{
+        background-color: rgb(221, 129, 17);
+    }
+    .a h3{
+        color: white;
+    }
+    .top{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: antiquewhite;
+    }
+    nav{
+        flex: 3;
+    }main{
+        flex: 7;
+    }
+    </style>
+</head>
+
+<body>
+<div class="content">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li class="cha"><a href="#">Danh mục sản phẩm</a>
+                <ul class="con">
+                    <li><a href="#">Giống cây ăn quả</a></li>
+                    <li><a href="#">Giống cây ăn quả</a></li>
+                    <li><a href="#">Giống cây ăn quả</a></li>
+                    <li><a href="#">Giống cây ăn quả</a></li>
+                    <li><a href="#">Giống cây ăn quả</a></li>
+
+                </ul>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+
+        </ul>
+    </nav>
+    <main>
+
+    </main>
+</div>
+</body>
+
+</html>

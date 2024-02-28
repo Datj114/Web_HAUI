@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    td{
+        padding-right: 25px;
+    }
+</style>
+<body>
+    <form>
+        <table align="center">
+            <tr>
+                <td>Nhập số thứ nhất:</td>
+                <td><input type="number" id="a"></td>
+            </tr>
+            <tr>
+                <td>Nhập số thứ hai:</td>
+                <td><input type="number" id="b"></td>
+            </tr>
+            <tr>
+                <td>UCLN của hai số trên là:</td>
+                <td><input type="number" id="c"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="tìm" onclick="tim()">
+                    <input type="reset" value="Huỷ bỏ">
+                </td>
+            </tr>
+        </table>
+        
+    </form>
+    <script>
+        function tim(){
+            var a=parseInt(document.getElementById("a").value)
+            var b = parseInt(document.getElementById("b").value)
+            while(a!=b){
+                if(a>b){ a=a-b}
+                else{
+                    b=b-a
+                }
+            }
+            document.getElementById("c").value=a
+
+        }
+    </script>
+</body>
+</html>

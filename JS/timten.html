@@ -34,23 +34,30 @@
             <input type="text" id="ten">
         </div>
         <span>
-            <input type="button" value="tim" id="tim">
-            <input type="button" value="xoa" id="xoa">
+            <input type="button" value="tim" id="tim" onclick="fun()">
+            <input type="reset" value="xoa" id="xoa">
         </span>
     </form>
     <script>
-        document.getElementById('tim').onclick=function(){
-            var ten = document.getElementById('nhap').value
-            ten=ten.trim()
-            ten=ten.replace(/\s +/g,' ')
-            document.getElementById('nhap').value=ten
-            var arr=ten.split(" ")
-            document.getElementById('ten').value=arr[arr.length-1]
-        }
-        document.getElementById('xoa').onclick = function (){
-            document.getElementById('ten').value=''
-            document.getElementById('nhap').value = ''
+        // document.getElementById('tim').onclick=function(){
+        //     var ten = document.getElementById('nhap').value
+        //     ten=ten.trim()
+        //     ten=ten.replace(/\s+/g,' ')
+        //     document.getElementById('nhap').value=ten
+        //     var arr=ten.split(" ")
+        //     document.getElementById('ten').value=arr[arr.length-1]
+        // }
+        // document.getElementById('xoa').onclick = function (){
+        //     document.getElementById('ten').value=''
+        //     document.getElementById('nhap').value = ''
 
+        // }
+        function fun(){
+            var name = document.getElementById('nhap').value;
+            var arr = name.trim().split(" ")
+            console.log(arr)
+            var ten = arr[arr.length - 1]
+            document.getElementById('ten').value= ten
         }
     </script>
 </body>

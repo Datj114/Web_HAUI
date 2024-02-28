@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table align="center">
+        <form action="">
+           <tr >
+                <td colspan="2" align="center"
+colspan="2" align="center"><h3>Đăng nhập</h3></td>
+           </tr> 
+           <tr>
+                <td>name</td>
+                <td><input type="text" id="name"></td>
+           </tr>
+            <tr>
+                <td>mail</td>
+                <td><input type="text" id="mail"></td>
+            </tr>
+            <tr>
+                <td>Mật khẩu</td>
+                <td><input type="text" id="password"></td>
+            </tr>
+            <tr>
+                <td>Nhập lại mật khẩu</td>
+                <td><input type="text" id="password2"></td>
+            </tr>
+            <tr>
+                <td>ngày</td>
+                <td><input type="date" id="date"></td>
+            </tr>
+            <tr>
+                <td>SĐT</td>
+                <td><input type="text" id="sdt"></td>
+            </tr>
+
+            <tr >
+                <td colspan="2" align="center">
+                    <input type="button" value="Đăng ký" onclick="add()">
+                    <input type="reset" value="Huỷ bỏ">
+                </td>
+            </tr>
+        </form>
+    </table>
+    <script>
+        function add(){
+            var name = document.getElementById("name").value
+            var mail = document.getElementById("mail").value
+            var password = document.getElementById("password").value
+            var password2 = document.getElementById("password2").value
+            var sdt = document.getElementById("sdt").value
+            if(name.trim()==='' || mail.trim()==='' || password.trim() === '' || password2.trim() === ''){
+                alert("nhap thieu")
+            }else if(/[0-9]/.test(name)){
+                alert("ten co so, nhap lai")
+            }else if(!(/^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$/.test(mail))){
+                alert("sai email")
+            }else if(!(/^.*(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[\W_]).{8,}$/.test(password))){
+                // .*: Biểu thức này khớp với bất kỳ ký tự nào(.) một hoặc nhiều lần(*), có nghĩa là có thể khớp với bất kỳ chuỗi nào từ điểm bắt đầu của chuỗi.
+                alert("sai mk")
+            }else if(password2.trim()!==password.trim()){
+                alert("hai mat khau khac nahu")
+            } 
+            if((/^(0|\+84)[1-9]\d{8}%/.test(sdt))){
+                alert("sai sdt")
+            }
+        }
+    </script>
+</body>
+</html>

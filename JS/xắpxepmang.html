@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td><h3>Sap xep mang</h3></td>
+            </tr>
+            <tr>
+                <td>Nhập mảng</td>
+                <td><input type="text" id="a"></td>
+            </tr>
+            <tr>
+                <td> mảng sau khi xắp xếp</td>
+                <td><input type="text" id="b"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset" value="huỷ">
+                    <input type="button" value="sắp xếp" onclick="fun()">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function fun(){
+            var a=document.getElementById('a').value;
+            var arr=a.split(",")
+            arr=arr.sort()
+            var j=0
+            var x=[]
+            for(var i=0;i<arr.length;i++){
+                if(parseInt(arr[i] )%2==0){
+                   x[j]=arr[i] 
+                   j++
+                }
+            }
+            for (var i = 0; i < arr.length; i++) {
+                if (parseInt(arr[i]) % 2 != 0) {
+                    x[j] = arr[i]
+                    j++
+                }
+            }
+            var c=x.join(",")
+            document.getElementById('b').value=c
+        }
+    </script>
+</body>
+</html>
